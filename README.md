@@ -2,7 +2,7 @@
 hnegishi's dotfiles
 
 
-VScode install settings and extension
+- VScode install settings and extension
 ```
-$ ./vscode-install.sh
+$ ./vscode_install.sh
 ```
