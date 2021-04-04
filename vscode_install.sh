@@ -6,8 +6,8 @@ VSCODE_SETTING_DIR=~/Library/Application\ Support/Code/User
 rm "$VSCODE_SETTING_DIR/settings.json"
 ln -s "$SCRIPT_DIR/vscode/settings.json" "${VSCODE_SETTING_DIR}/settings.json"
 
-rm "$VSCODE_SETTING_DIR/keybindings.json"
-ln -s "$SCRIPT_DIR/vscode/keybindings.json" "${VSCODE_SETTING_DIR}/keybindings.json"
+# rm "$VSCODE_SETTING_DIR/keybindings.json"
+# ln -s "$SCRIPT_DIR/vscode/keybindings.json" "${VSCODE_SETTING_DIR}/keybindings.json"
 
 # install extention
 cat "$VSCODE_SETTING_DIR/vscode/extensions" | while read line
