@@ -1,7 +1,5 @@
 #!/bin/sh
 
-<< COMMENTOUT
-
 SCRIPT_DIR=$(cd $(dirname $0) && pwd)
 VSCODE_SETTING_DIR=~/Library/Application\ Support/Code/User
 
@@ -18,6 +16,3 @@ do
 done
 
 code --list-extensions > "$VSCODE_SETTING_DIR/vscode/extensions"
-
-COMMENTOUT
-
