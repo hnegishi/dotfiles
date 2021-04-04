@@ -1,0 +1,13 @@
+{
+    "workbench.iconTheme": "vscode-icons",
+    "git.autofetch": true,
+    "workbench.editor.enablePreview": false,
+    "editor.tabSize": 2,
+    "window.zoomLevel": 0,
+    "editor.renderWhitespace": true,
+    "git.confirmSync": false,
+    "vsicons.dontShowNewVersionMessage": true,
+    "workbench.startupEditor": "newUntitledFile",
+    "tabnine.experimentalAutoImports": true,
+    "explorer.confirmDelete": false, // スペース
+}
