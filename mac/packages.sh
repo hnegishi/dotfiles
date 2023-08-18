@@ -11,6 +11,6 @@ autoconf
 wget yarn \
 rbenv pyenv direnv tfenv python nodenv
 # vscode, iterm2, sequel-pro
-brew install --cask visual-studio-code iterm2 homebrew/cask-versions/sequel-pro-nightly tableplus sequel-ace docker
+brew install --cask visual-studio-code iterm2 tableplus sequel-ace docker
 brew install rcm
 
