@@ -1,6 +1,5 @@
 aki77.rails-routes
 christian-kohler.path-intellisense
-CoenraadS.bracket-pair-colorizer-2
 dbaeumer.vscode-eslint
 dsznajder.es7-react-js-snippets
 eamodio.gitlens
@@ -8,6 +7,7 @@ esbenp.prettier-vscode
 formulahendry.auto-close-tag
 formulahendry.auto-rename-tag
 GitHub.copilot
+GitHub.copilot-chat
 GitHub.copilot-labs
 hashicorp.terraform
 humao.rest-client
@@ -19,6 +19,11 @@ MS-CEINTL.vscode-language-pack-ja
 ms-python.isort
 ms-python.python
 ms-python.vscode-pylance
+ms-toolsai.jupyter
+ms-toolsai.jupyter-keymap
+ms-toolsai.jupyter-renderers
+ms-toolsai.vscode-jupyter-cell-tags
+ms-toolsai.vscode-jupyter-slideshow
 octref.vetur
 oderwat.indent-rainbow
 qhoekman.language-plantuml
