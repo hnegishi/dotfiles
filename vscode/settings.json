@@ -38,5 +38,6 @@
   // ファイル保存時、最終行の改行を削除する(file最後に空行を残す)
   "files.trimFinalNewlines": true,
   // ファイル保存時、行末の空白を削除する
-  "files.trimTrailingWhitespace": true
+  "files.trimTrailingWhitespace": true,
+  "git.enableSmartCommit": true
 }
