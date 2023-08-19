@@ -17,7 +17,12 @@ $ brew install git
 
 # Usage
 
-- VScode install settings and extension
+- brew install & create link
+```bash
+$ ./install.sh
 ```
+
+- VScode install settings and extension
+```bash
 $ ./vscode_install.sh
 ```
