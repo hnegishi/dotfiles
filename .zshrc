@@ -100,6 +100,27 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh
 
+############ env ############
+# rbenv
+eval "$(rbenv init -)"
+# pyenv
+eval "$(pyenv init -)"
+# nodenv
+eval "$(nodenv init -)"
+
+############ zsh-completions ############
+if type brew &>/dev/null; then
+    FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
+    autoload -Uz compinit
+    compinit
+fi
+
+############ zsh-syntax-highlighting ############
+source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+############ zsh-autosuggestions ############
+source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+
 ############ HISTORY ############
 # ヒストリファイルを指定
 HISTFILE=~/.zsh_history
