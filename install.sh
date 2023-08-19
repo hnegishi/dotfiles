@@ -3,16 +3,20 @@
 set -u
 DOT_DIRECTORY="${HOME}/dotfiles"
 DOT_CONFIG_DIRECTORY=".config"
+IGNORE_PATTERN="^\.(git|config)"
 
-echo "link home directory dotfiles"
+echo "Create dotfile link to home directory."
+
 cd ${DOT_DIRECTORY}
-for f in .??*
-do
+for f in .??*; do
     #無視したいファイルやディレクトリ
-    [ "$f" = ".git" ] && continue
-    [ "$f" = ".config" ] && continue
+    [[ "$f" =~ $IGNORE_PATTERN ]] && continue
+#    [ "$f" = ".git" ] && continue
+#    [ "$f" = ".config" ] && continue
     ln -snfv ${DOT_DIRECTORY}/${f} ${HOME}/${f}
 done
+
+echo "Success create link."
 
 echo "link .config directory dotfiles"
 cd ${DOT_DIRECTORY}/${DOT_CONFIG_DIRECTORY}
