@@ -3,6 +3,8 @@
 SCRIPT_DIR=$(cd $(dirname $0) && pwd)
 VSCODE_SETTING_DIR=~/Library/Application\ Support/Code/User
 
+#
+
 echo $SCRIPT_DIR
 
 rm "$VSCODE_SETTING_DIR/settings.json"
