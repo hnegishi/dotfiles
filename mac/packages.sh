@@ -2,13 +2,14 @@
 
 brew update
 brew upgrade
-brew install peco the_silver_searcher ctags jq\
-fzf fish omf \
+brew install the_silver_searcher ctags jq wget\
+# fish fzf omf \
+peco zsh-completions zsh-syntax-highlighting zsh-autosuggestions \
 autoconf \
-wget yarn \
+yarn \
 rbenv pyenv nodenv tfenv direnv \
-gitleaks \
+gitleaks
 
-brew install --cask visual-studio-code iterm2 tableplus sequel-ace docker
-brew install rcm
-
+brew install --cask slack visual-studio-code iterm2 tableplus sequel-ace docker postman
+# TODO: rcmでdotfilesを管理する
+# brew install rcm

@@ -3,18 +3,19 @@
 set -u
 DOT_DIRECTORY="${HOME}/dotfiles"
 DOT_CONFIG_DIRECTORY=".config"
-IGNORE_PATTERN="^\.(git|config)"
 
+IGNORE_PATTERN="^\.(git|config|chrome|mac|vscode|README.md|install.sh|vscode_install.sh|)"
 echo "Create dotfile link to home directory."
 
 cd ${DOT_DIRECTORY}
-for f in .??*; do
-    #無視したいファイルやディレクトリ
-    [[ "$f" =~ $IGNORE_PATTERN ]] && continue
-#    [ "$f" = ".git" ] && continue
-#    [ "$f" = ".config" ] && continue
-    ln -snfv ${DOT_DIRECTORY}/${f} ${HOME}/${f}
-done
+# for f in .??*; do
+#     # 無視したいファイルやディレクトリ
+#     [[ "$f" =~ $IGNORE_PATTERN ]] && continue
+#     ln -snfv ${DOT_DIRECTORY}/${f} ${HOME}/${f}
+# done
+
+# TODO: 今の所ホワイトリスト方式で問題ないが後々ブラックリスト方式へ変更する。
+ln -snfv ${DOT_DIRECTORY}/.zshrc ${HOME}/.zshrc
 
 echo "Success create link."
 
@@ -26,4 +27,3 @@ for file in `\find . -maxdepth 8 -type f`; do
 done
 
 echo "linked dotfiles complete!"
-

@@ -1,0 +1,15 @@
+name: main
+
+on:
+  push:
+    branches: [master]
+
+jobs:
+  macos-test:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Run brew bundle
+        run: brew bundle
+      - name: Run install.sh
+        run: ${GITHUB_WORKSPACE}/install.sh
