@@ -2,7 +2,7 @@
 
 brew update
 brew upgrade
-brew install the_silver_searcher ctags jq wget\
+brew install the_silver_searcher ctags jq wget \
 # fish fzf omf \
 peco zsh-completions zsh-syntax-highlighting zsh-autosuggestions \
 autoconf \

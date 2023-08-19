@@ -3,10 +3,6 @@
 SCRIPT_DIR=$(cd $(dirname $0) && pwd)
 VSCODE_SETTING_DIR=~/Library/Application\ Support/Code/User
 
-#
-
-echo $SCRIPT_DIR
-
 rm "$VSCODE_SETTING_DIR/settings.json"
 ln -s "$SCRIPT_DIR/vscode/settings.json" "${VSCODE_SETTING_DIR}/settings.json"
 
@@ -19,4 +15,4 @@ do
   code --install-extension $line
 done
 
-code --list-extensions > "$VSCODE_SETTING_DIR/extensions"
+code --list-extensions > "$SCRIPT_DIR/vscode/extensions"

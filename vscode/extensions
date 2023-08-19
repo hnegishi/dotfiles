@@ -9,11 +9,13 @@ formulahendry.auto-rename-tag
 GitHub.copilot
 GitHub.copilot-chat
 GitHub.copilot-labs
+github.vscode-github-actions
 hashicorp.terraform
 humao.rest-client
 iceliu.highlight-icemode
 jebbs.plantuml
 kaiwood.endwise
+mikestead.dotenv
 ms-azuretools.vscode-docker
 MS-CEINTL.vscode-language-pack-ja
 ms-python.isort
