@@ -8,7 +8,9 @@ jobs:
   macos-test:
     runs-on: macos-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
+      - name: Setup tmate session
+        uses: mxschmitt/action-tmate@v3
       - name: Run install.sh
         run: ${GITHUB_WORKSPACE}/install.sh
       - name: Run vscode_install.sh
