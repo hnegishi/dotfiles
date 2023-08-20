@@ -24,6 +24,7 @@ printf "Create dotfile link to home directory."
 
 # TODO: 今の所ホワイトリスト方式で問題ないが後々ブラックリスト方式へ変更する。
 # oh-my-zshのインストール
+zsh --version
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ln -snfv ${DOT_DIRECTORY}/.zshrc ${HOME}/.zshrc
 source ~/.zshrc
