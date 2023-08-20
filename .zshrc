@@ -72,6 +72,8 @@ ZSH_THEME="robbyrussell"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   git
+  ruby
+  rails
 )
 
 source $ZSH/oh-my-zsh.sh

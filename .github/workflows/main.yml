@@ -11,3 +11,5 @@ jobs:
       - uses: actions/checkout@v2
       - name: Run install.sh
         run: ${GITHUB_WORKSPACE}/install.sh
+      - name: Run vscode_install.sh
+        run: ${GITHUB_WORKSPACE}/vscode_install.sh
