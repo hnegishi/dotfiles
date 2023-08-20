@@ -70,7 +70,9 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(
+  git
+)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -118,7 +120,7 @@ fi
 ############ zsh-syntax-highlighting ############
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-############ zsh-autosuggestions ############
+########### zsh-autosuggestions ############
 source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 ############ HISTORY ############
@@ -163,10 +165,10 @@ if [[ -n $(echo ${^fpath}/chpwd_recent_dirs(N)) && -n $(echo ${^fpath}/cdr(N)) ]
     zstyle ':chpwd:*' recent-dirs-default true
     zstyle ':chpwd:*' recent-dirs-max 1000
     # 初回のみ$HOME/.cache作成
-    if [ -e "$HOME/.cache/chpwd-recent-dirs" ]; then
+    if [ ! -e "$HOME/.cache/chpwd-recent-dirs" ]; then
       mkdir -p $HOME/.cache/
     fi
-    zstyle ':chpwd:*' recent-dirs-file "$HOME/.cache/chpwd-recent-dirs" # mkdir -p $HOME/.cache/chpwd-recent-dirs
+    zstyle ':chpwd:*' recent-dirs-file "$HOME/.cache/chpwd-recent-dirs"
 fi
 
 function peco-cdr() {
