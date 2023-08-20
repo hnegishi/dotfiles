@@ -29,7 +29,6 @@ setup_zsh() {
   # done
   ln -snfv ${DOT_DIRECTORY}/.zshrc ${HOME}/.zshrc
   printf "${GREEN}Success create link.${NC}"
-  source ~/.zshrc
 }
 
 # printf "link .config directory dotfiles"
