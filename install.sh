@@ -8,27 +8,29 @@ DOT_DIRECTORY=$(cd $(dirname $0) && pwd)
 GREEN='\033[0;32m'
 NC='\033[0m' # No Color
 
-########### brew ##########
-printf "start brew install"
-sh ./mac/packages.sh
-printf "${GREEN}Success brew install${NC}"
+brwe_install()  {
+  printf "start brew install"
+  sh ./mac/packages.sh
+  printf "${GREEN}Success brew install${NC}"
+}
 
-########## zsh ##########
-printf "Create dotfile link to home directory."
-# cd ${DOT_DIRECTORY}
-# for f in .??*; do
-#     # 無視したいファイルやディレクトリ
-#     [[ "$f" =~ $IGNORE_PATTERN ]] && continue
-#     ln -snfv ${DOT_DIRECTORY}/${f} ${HOME}/${f}
-# done
+install_ohmyzsh() {
+  sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+}
 
-# TODO: 今の所ホワイトリスト方式で問題ないが後々ブラックリスト方式へ変更する。
-# oh-my-zshのインストール
-zsh --version
-sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-ln -snfv ${DOT_DIRECTORY}/.zshrc ${HOME}/.zshrc
-source ~/.zshrc
-printf "${GREEN}Success create link.${NC}"
+setup_zsh() {
+  printf "start setup zsh"
+  # TODO: 今の所ホワイトリスト方式で問題ないが後々ブラックリスト方式へ変更する。
+  # cd ${DOT_DIRECTORY}
+  # for f in .??*; do
+  #     # 無視したいファイルやディレクトリ
+  #     [[ "$f" =~ $IGNORE_PATTERN ]] && continue
+  #     ln -snfv ${DOT_DIRECTORY}/${f} ${HOME}/${f}
+  # done
+  ln -snfv ${DOT_DIRECTORY}/.zshrc ${HOME}/.zshrc
+  printf "${GREEN}Success create link.${NC}"
+  source ~/.zshrc
+}
 
 # printf "link .config directory dotfiles"
 # cd ${DOT_DIRECTORY}/${DOT_CONFIG_DIRECTORY}
@@ -37,3 +39,11 @@ printf "${GREEN}Success create link.${NC}"
 #     ln -snfv ${DOT_DIRECTORY}/${DOT_CONFIG_DIRECTORY}/${file:2} ${HOME}/${DOT_CONFIG_DIRECTORY}/${file:2}
 # done
 # printf "${GREEN}linked dotfiles complete!${NC}"
+
+main() {
+  brwe_install
+  install_ohmyzsh
+  setup_zsh
+}
+
+main "$@"
