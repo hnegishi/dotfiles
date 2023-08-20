@@ -11,5 +11,7 @@ jobs:
       - uses: actions/checkout@v3
       - name: Run install.sh
         run: ${GITHUB_WORKSPACE}/install.sh
+        env:
+          ZSH_VERSION: 5.8
       - name: Run vscode_install.sh
         run: ${GITHUB_WORKSPACE}/vscode_install.sh
