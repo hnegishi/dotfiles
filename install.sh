@@ -2,8 +2,6 @@
 
 set -u
 DOT_DIRECTORY=$(cd $(dirname $0) && pwd)
-# DOT_CONFIG_DIRECTORY=".config"
-
 GREEN='\033[0;32m'
 NC='\033[0m' # No Color
 
@@ -20,6 +18,7 @@ install_ohmyzsh() {
 setup_zsh() {
   printf "start setup zsh"
   ln -snfv ${DOT_DIRECTORY}/.zshrc ${HOME}/.zshrc
+  source ~/.zshrc
   printf "${GREEN}Success create link.${NC}"
 }
 
