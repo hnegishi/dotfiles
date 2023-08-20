@@ -8,7 +8,7 @@ DOT_DIRECTORY=$(cd $(dirname $0) && pwd)
 GREEN='\033[0;32m'
 NC='\033[0m' # No Color
 
-brwe_install()  {
+brew_install()  {
   printf "start brew install"
   sh ./mac/packages.sh
   printf "${GREEN}Success brew install${NC}"
@@ -41,7 +41,7 @@ setup_zsh() {
 # printf "${GREEN}linked dotfiles complete!${NC}"
 
 main() {
-  brwe_install
+  brew_install
   install_ohmyzsh
   setup_zsh
 }
