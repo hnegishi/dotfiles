@@ -4,7 +4,7 @@ brew update
 brew upgrade
 brew install the_silver_searcher ctags jq wget gnupg \
 # fish fzf omf \
-peco zsh-completions zsh-syntax-highlighting zsh-autosuggestions \
+peco zsh-completions zsh-autocomplete zsh-syntax-highlighting zsh-autosuggestions \
 autoconf \
 yarn \
 rbenv pyenv nodenv tfenv direnv \
