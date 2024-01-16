@@ -111,6 +111,8 @@ eval "$(rbenv init -)"
 eval "$(pyenv init -)"
 # nodenv
 eval "$(nodenv init -)"
+# goenv
+eval "$(goenv init -)"
 
 ############ zsh-completions ############
 if type brew &>/dev/null; then
