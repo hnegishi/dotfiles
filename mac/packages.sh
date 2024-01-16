@@ -7,7 +7,7 @@ brew install the_silver_searcher ctags jq wget gnupg \
 peco zsh-completions zsh-autocomplete zsh-syntax-highlighting zsh-autosuggestions \
 autoconf \
 yarn \
-rbenv pyenv nodenv tfenv direnv \
+rbenv pyenv nodenv goenv tfenv direnv \
 gitleaks
 
 brew install --cask slack visual-studio-code iterm2 tableplus sequel-ace docker postman
