@@ -9,6 +9,6 @@ yarn \
 rbenv pyenv nodenv goenv tfenv direnv \
 gitleaks
 
-brew install --cask slack visual-studio-code iterm2 tableplus sequel-ace docker postman
+brew install --cask slack visual-studio-code iterm2 warp tableplus sequel-ace docker postman
 # TODO: rcmでdotfilesを管理する
 # brew install rcm
