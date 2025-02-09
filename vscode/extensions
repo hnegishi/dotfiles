@@ -6,9 +6,8 @@ eamodio.gitlens
 esbenp.prettier-vscode
 formulahendry.auto-close-tag
 formulahendry.auto-rename-tag
-GitHub.copilot
-GitHub.copilot-chat
-GitHub.copilot-labs
+github.copilot
+github.copilot-chat
 github.vscode-github-actions
 hashicorp.terraform
 humao.rest-client
@@ -17,7 +16,8 @@ jebbs.plantuml
 kaiwood.endwise
 mikestead.dotenv
 ms-azuretools.vscode-docker
-MS-CEINTL.vscode-language-pack-ja
+ms-ceintl.vscode-language-pack-ja
+ms-python.debugpy
 ms-python.isort
 ms-python.python
 ms-python.vscode-pylance
@@ -25,7 +25,7 @@ octref.vetur
 oderwat.indent-rainbow
 qhoekman.language-plantuml
 rebornix.ruby
-ritwickdey.LiveServer
+ritwickdey.liveserver
 shardulm94.trailing-spaces
 sianglim.slim
 slevesque.vscode-hexdump
