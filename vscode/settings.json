@@ -64,5 +64,28 @@
     "identifier": "none"
   },
   "rubyLsp.formatter": "auto",
-  "github.copilot.chat.localeOverride": "ja"
+  "github.copilot.chat.localeOverride": "ja",
+  "markdown-pdf.mermaidServer": "https://unpkg.com/mermaid@10.4.0/dist/mermaid.min.js",
+  "github.copilot.nextEditSuggestions.enabled": true,
+  "github.copilot.chat.editor.temporalContext.enabled": true,
+  "roo-cline.allowedCommands": [
+    "npm test",
+    "npm install",
+    "tsc",
+    "git log",
+    "git diff",
+    "git show"
+  ],
+  "rubyLsp.featureFlags": {
+    "all": true
+  },
+  "terminal.integrated.defaultProfile.osx": "zsh",
+  "git.ignoreRebaseWarning": true,
+  "github.copilot.advanced": {
+    "enable": true,
+    "agentMode": true
+  },
+  "githubPullRequests.createOnPublishBranch": "never",
+  "chat.agent.maxRequests": 20,
+  "comments.thread.confirmOnCollapse": "never"
 }
