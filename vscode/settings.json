@@ -46,6 +46,10 @@
   "ruby.format": "rubocop",
   "security.promptForLocalFileProtocolHandling": false,
   "explorer.confirmDragAndDrop": false,
+  "[markdown]": {
+    "editor.formatOnSave": false,
+    "files.trimTrailingWhitespace": false
+  },
   "[ruby]": {
     "editor.defaultFormatter": "Shopify.ruby-lsp",
     "editor.formatOnSave": true,
@@ -55,9 +59,7 @@
     "files.trimTrailingWhitespace": true,
     "files.insertFinalNewline": true,
     "files.trimFinalNewlines": true,
-    "editor.rulers": [
-      120
-    ],
+    "editor.rulers": [120],
     "editor.semanticHighlighting.enabled": true
   },
   "rubyLsp.rubyVersionManager": {
@@ -87,5 +89,12 @@
   },
   "githubPullRequests.createOnPublishBranch": "never",
   "chat.agent.maxRequests": 20,
-  "comments.thread.confirmOnCollapse": "never"
+  "comments.thread.confirmOnCollapse": "never",
+  "githubPullRequests.pullBranch": "never",
+  "diffEditor.ignoreTrimWhitespace": false,
+  "claudeCode.preferredLocation": "panel",
+  "gitlens.ai.model": "vscode",
+  "gitlens.ai.vscode.model": "copilot:gpt-4.1",
+  "claudeCode.selectedModel": "opus",
+  "chatgpt.localeOverride": "ja-JP"
 }
