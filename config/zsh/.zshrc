@@ -80,9 +80,13 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh
-############ env ############
+
+# Homebrew
+eval "$(/opt/homebrew/bin/brew shellenv)"
 # claude code (native binary)
 export PATH="$HOME/.local/bin:$PATH"
+
+############ env ############
 # rbenv
 eval "$(rbenv init -)"
 # pyenv

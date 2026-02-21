@@ -8,11 +8,9 @@ jobs:
   macos-test:
     runs-on: macos-latest
     steps:
-      - uses: actions/checkout@v3
-      - name: Run install.sh
-        run: ${GITHUB_WORKSPACE}/install.sh
+      - uses: actions/checkout@v4
+      - name: Run install
+        run: make install
         env:
           ZSH_VERSION: 5.8
           ZSH_CACHE_DIR: ${GITHUB_WORKSPACE}/.oh-my-zsh/cache
-      - name: Run vscode_install.sh
-        run: ${GITHUB_WORKSPACE}/vscode_install.sh
