@@ -95,6 +95,8 @@
   "claudeCode.preferredLocation": "panel",
   "gitlens.ai.model": "vscode",
   "gitlens.ai.vscode.model": "copilot:gpt-4.1",
-  "claudeCode.selectedModel": "opus",
-  "chatgpt.localeOverride": "ja-JP"
+  "claudeCode.selectedModel": "opus[1m]",
+  "chatgpt.localeOverride": "ja-JP",
+  "chatgpt.followUpQueueMode": "steer",
+  "workbench.tree.expandMode": "doubleClick"
 }
