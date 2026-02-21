@@ -7,7 +7,7 @@ peco zsh-completions zsh-autocomplete zsh-syntax-highlighting zsh-autosuggestion
 autoconf \
 yarn \
 asdf rbenv pyenv goenv tfenv direnv \
-gitleaks
+gitleaks gh
 
 brew install --cask \
   google-chrome slack spotify \
