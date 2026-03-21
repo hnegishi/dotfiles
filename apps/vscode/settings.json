@@ -20,7 +20,7 @@
   "editor.formatOnSave": true,
   // ファイル保存時、同時に行われるアクション
   "editor.codeActionsOnSave": {
-    "source.fixAll.prettier": "explicit"
+    "source.fixAll.prettier": "explicit",
   },
   // ファイルのパンくずリストを表示する
   "breadcrumbs.enabled": true,
@@ -48,7 +48,7 @@
   "explorer.confirmDragAndDrop": false,
   "[markdown]": {
     "editor.formatOnSave": false,
-    "files.trimTrailingWhitespace": false
+    "files.trimTrailingWhitespace": false,
   },
   "[ruby]": {
     "editor.defaultFormatter": "Shopify.ruby-lsp",
@@ -60,10 +60,10 @@
     "files.insertFinalNewline": true,
     "files.trimFinalNewlines": true,
     "editor.rulers": [120],
-    "editor.semanticHighlighting.enabled": true
+    "editor.semanticHighlighting.enabled": true,
   },
   "rubyLsp.rubyVersionManager": {
-    "identifier": "none"
+    "identifier": "none",
   },
   "rubyLsp.formatter": "auto",
   "github.copilot.chat.localeOverride": "ja",
@@ -76,16 +76,16 @@
     "tsc",
     "git log",
     "git diff",
-    "git show"
+    "git show",
   ],
   "rubyLsp.featureFlags": {
-    "all": true
+    "all": true,
   },
   "terminal.integrated.defaultProfile.osx": "zsh",
   "git.ignoreRebaseWarning": true,
   "github.copilot.advanced": {
     "enable": true,
-    "agentMode": true
+    "agentMode": true,
   },
   "githubPullRequests.createOnPublishBranch": "never",
   "chat.agent.maxRequests": 20,
@@ -95,8 +95,8 @@
   "claudeCode.preferredLocation": "panel",
   "gitlens.ai.model": "vscode",
   "gitlens.ai.vscode.model": "copilot:gpt-4.1",
-  "claudeCode.selectedModel": "opus[1m]",
+  "claudeCode.selectedModel": "default",
   "chatgpt.localeOverride": "ja-JP",
   "chatgpt.followUpQueueMode": "steer",
-  "workbench.tree.expandMode": "doubleClick"
+  "workbench.tree.expandMode": "doubleClick",
 }
