@@ -331,11 +331,11 @@
   "enabledPlugins": {
     "cc-prtools@hnegishi": true,
     "docker-mcp-toolkit@docker": true,
-    "example-skills@anthropic-agent-skills": true
+    "example-skills@anthropic-agent-skills": true,
+    "ruby-lsp@claude-plugins-official": true
   },
   "language": "japanese",
   "alwaysThinkingEnabled": true,
-  "effortLevel": "max",
   "feedbackSurveyState": {
     "lastShownTime": 2069451551000
   }
