@@ -5,6 +5,7 @@ brew upgrade
 brew install the_silver_searcher ctags jq wget gnupg \
 peco zsh-completions zsh-autocomplete zsh-syntax-highlighting zsh-autosuggestions \
 autoconf \
+uv \
 yarn \
 asdf rbenv pyenv goenv tfenv direnv \
 gitleaks gh
