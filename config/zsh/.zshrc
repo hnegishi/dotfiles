@@ -83,6 +83,8 @@ source $ZSH/oh-my-zsh.sh
 
 # Homebrew
 eval "$(/opt/homebrew/bin/brew shellenv)"
+# openssl (Homebrew keg-only)
+export PATH="/opt/homebrew/opt/openssl@3/bin:$PATH"
 # claude code (native binary)
 export PATH="$HOME/.local/bin:$PATH"
 
@@ -97,6 +99,9 @@ eval "$(goenv init -)"
 eval "$(direnv hook zsh)"
 # asdf
 export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
+# Google Cloud SDK (PATHとシェル補完)
+if [ -f "$HOME/google-cloud-sdk/path.zsh.inc" ]; then . "$HOME/google-cloud-sdk/path.zsh.inc"; fi
+if [ -f "$HOME/google-cloud-sdk/completion.zsh.inc" ]; then . "$HOME/google-cloud-sdk/completion.zsh.inc"; fi
 ############ zsh-completions ############
 if type brew &>/dev/null; then
     FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
@@ -169,4 +174,3 @@ bindkey '^u' peco-cdr
 alias -g lb='`git branch | peco --prompt "GIT BRANCH>" | head -n 1 | sed -e "s/^\*\s*//g"`'
 # dockerコンテナに入る。deで実行できる
 alias de='docker exec -it $(docker ps | peco | cut -d " " -f 1) /bin/bash'
-export PATH="/opt/homebrew/opt/openssl@3/bin:$PATH"
