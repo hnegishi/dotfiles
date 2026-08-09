@@ -7,6 +7,7 @@ peco zsh-completions zsh-autocomplete zsh-syntax-highlighting zsh-autosuggestion
 autoconf \
 uv \
 yarn \
+herdr \
 asdf rbenv pyenv goenv tfenv direnv \
 gitleaks gh
 
@@ -19,6 +20,9 @@ brew install --cask \
 
 # Claude Code (native install - auto-updates)
 curl -fsSL https://claude.ai/install.sh | bash
+
+# herdr Claude Code integration (~/.claude/hooks/herdr-agent-state.sh を生成)
+herdr integration install claude
 
 # Node.js via asdf
 asdf plugin add nodejs || true
