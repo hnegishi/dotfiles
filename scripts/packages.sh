@@ -29,8 +29,8 @@ asdf plugin add nodejs || true
 asdf install nodejs latest
 asdf global nodejs latest
 
-# Codex CLI (requires Node.js)
-npm i -g @openai/codex
+# Codex CLI (native install)
+curl -fsSL https://chatgpt.com/codex/install.sh | sh
 
 # TODO: rcmでdotfilesを管理する
 # brew install rcm
