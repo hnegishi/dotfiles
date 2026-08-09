@@ -8,13 +8,13 @@ autoconf \
 uv \
 yarn \
 herdr \
-asdf rbenv pyenv goenv tfenv direnv \
+asdf rbenv tfenv direnv \
 gitleaks gh
 
 brew install --cask \
   google-chrome slack spotify \
   visual-studio-code \
-  iterm2 warp ghostty \
+  warp ghostty \
   tableplus sequel-ace medis \
   docker postman
 
