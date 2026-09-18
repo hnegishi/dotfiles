@@ -59,6 +59,11 @@ plugins=(
   ruby
   rails
 )
+############ zsh-completions / zsh-autocomplete ############
+# oh-my-zshより前に読み込む（compinitはoh-my-zshが1回だけ実行する）
+# zsh-autocompleteは自前でcompinitを扱うため.zshrc側では呼ばない
+FPATH=/opt/homebrew/share/zsh-completions:$FPATH
+source /opt/homebrew/share/zsh-autocomplete/zsh-autocomplete.plugin.zsh
 source $ZSH/oh-my-zsh.sh
 # User configuration
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -102,18 +107,8 @@ export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
 # Google Cloud SDK (PATHとシェル補完)
 if [ -f "$HOME/google-cloud-sdk/path.zsh.inc" ]; then . "$HOME/google-cloud-sdk/path.zsh.inc"; fi
 if [ -f "$HOME/google-cloud-sdk/completion.zsh.inc" ]; then . "$HOME/google-cloud-sdk/completion.zsh.inc"; fi
-############ zsh-completions ############
-if type brew &>/dev/null; then
-    FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
-    autoload -Uz compinit
-    compinit
-fi
-############ zsh-syntax-highlighting ############
-source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 ########### zsh-autosuggestions ############
 source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-########### zsh-autocomplete ############
-source /opt/homebrew/share/zsh-autocomplete/zsh-autocomplete.plugin.zsh
 ############ HISTORY ############
 # ヒストリファイルを指定
 HISTFILE=~/.zsh_history
@@ -174,3 +169,7 @@ bindkey '^u' peco-cdr
 alias -g lb='`git branch | peco --prompt "GIT BRANCH>" | head -n 1 | sed -e "s/^\*\s*//g"`'
 # dockerコンテナに入る。deで実行できる
 alias de='docker exec -it $(docker ps | peco | cut -d " " -f 1) /bin/bash'
+
+############ zsh-syntax-highlighting ############
+# 他のプラグインやカスタムウィジェットより後に読み込む必要があるため末尾に置く
+source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
