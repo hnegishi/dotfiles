@@ -93,7 +93,6 @@
   "githubPullRequests.pullBranch": "never",
   "diffEditor.ignoreTrimWhitespace": false,
   "claudeCode.preferredLocation": "panel",
-  "gitlens.ai.model": "vscode",
   "gitlens.ai.vscode.model": "copilot:gpt-4.1",
   "claudeCode.selectedModel": "default",
   "chatgpt.localeOverride": "ja-JP",
