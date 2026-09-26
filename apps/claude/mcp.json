@@ -26,6 +26,30 @@
     "notion": {
       "type": "http",
       "url": "https://mcp.notion.com/mcp"
+    },
+    "google-drive": {
+      "type": "http",
+      "url": "https://drivemcp.googleapis.com/mcp/v1"
+    },
+    "mermaid": {
+      "type": "http",
+      "url": "https://chatgpt.mermaid.ai/anthropic/mcp"
+    },
+    "claude-docs": {
+      "type": "http",
+      "url": "https://api.anthropic.com/v1/pages/mcp"
+    },
+    "pdf-viewer": {
+      "type": "http",
+      "url": "https://example-server.modelcontextprotocol.io/pdf/mcp"
+    },
+    "pubmed": {
+      "type": "http",
+      "url": "https://pubmed.mcp.claude.com/mcp"
+    },
+    "goodnotes": {
+      "type": "http",
+      "url": "https://claude-mcp-api.ml.goodnotes.com/mcp"
     }
   }
 }
