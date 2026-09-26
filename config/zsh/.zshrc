@@ -58,6 +58,9 @@ plugins=(
   git
   ruby
   rails
+  docker
+  colored-man-pages
+  history-substring-search
 )
 ############ zsh-completions / zsh-autocomplete ############
 # oh-my-zshより前に読み込む（compinitはoh-my-zshが1回だけ実行する）
