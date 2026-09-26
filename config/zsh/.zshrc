@@ -99,10 +99,6 @@ export PATH="$HOME/.local/bin:$PATH"
 ############ env ############
 # rbenv
 eval "$(rbenv init -)"
-# pyenv
-eval "$(pyenv init -)"
-# goenv
-eval "$(goenv init -)"
 # direnv
 eval "$(direnv hook zsh)"
 # asdf
