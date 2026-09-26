@@ -421,8 +421,8 @@
   },
   "enabledPlugins": {
     "cc-prtools@hnegishi": true,
-    "docker-mcp-toolkit@docker": true,
     "example-skills@anthropic-agent-skills": true,
+    "mcp-toolkit@docker": true,
     "ruby-lsp@claude-plugins-official": true,
     "vercel@claude-plugins-official": true,
     "warp@claude-code-warp": true
