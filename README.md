@@ -42,7 +42,7 @@ dotfiles/
 ├── config/               # シンボリンク対象の設定ファイル
 │   └── zsh/.zshrc
 ├── apps/                 # アプリ固有の設定
-│   ├── claude/         # settings.json (シンボリンク) と mcp.json (MCP定義)
+│   ├── claude/         # settings.json (シンボリンク)、mcp.json (MCP定義)、skills/ (シンボリンク)
 │   ├── vscode/
 │   └── chrome/
 ├── scripts/              # セットアップスクリプト
