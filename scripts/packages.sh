@@ -26,6 +26,10 @@ asdf plugin add nodejs || true
 asdf install nodejs latest
 asdf global nodejs latest
 
+# typescript-lspプラグインの前提 (typescript-language-server)
+npm install -g typescript-language-server typescript
+asdf reshim nodejs
+
 # Codex CLI (native install)
 curl -fsSL https://chatgpt.com/codex/install.sh | sh
 

@@ -421,9 +421,13 @@
   },
   "enabledPlugins": {
     "cc-prtools@hnegishi": true,
+    "claude-md-management@claude-plugins-official": true,
     "example-skills@anthropic-agent-skills": true,
     "mcp-toolkit@docker": true,
+    "pr-review-toolkit@claude-plugins-official": true,
     "ruby-lsp@claude-plugins-official": true,
+    "security-guidance@claude-plugins-official": true,
+    "typescript-lsp@claude-plugins-official": true,
     "vercel@claude-plugins-official": true,
     "warp@claude-code-warp": true
   },
