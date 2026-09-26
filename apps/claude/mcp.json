@@ -46,10 +46,6 @@
     "pubmed": {
       "type": "http",
       "url": "https://pubmed.mcp.claude.com/mcp"
-    },
-    "goodnotes": {
-      "type": "http",
-      "url": "https://claude-mcp-api.ml.goodnotes.com/mcp"
     }
   }
 }
