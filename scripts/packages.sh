@@ -15,7 +15,8 @@ brew install --cask \
   visual-studio-code \
   warp ghostty \
   tableplus sequel-ace medis \
-  docker postman
+  docker postman \
+  stablyai/orca/orca
 
 # Claude Code (native install - auto-updates)
 curl -fsSL https://claude.ai/install.sh | bash
