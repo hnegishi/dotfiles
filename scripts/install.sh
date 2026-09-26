@@ -25,13 +25,13 @@ install_ohmyzsh() {
 
 setup_symlinks() {
   bash "$SCRIPT_DIR/symlink.sh"
-  source ~/.zshrc
 }
 
 main() {
   brew_install
   install_ohmyzsh
   setup_symlinks
+  printf "${GREEN}Setup complete. Open a new terminal to apply the zsh configuration.${NC}\n"
 }
 
 main "$@"
