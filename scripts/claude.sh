@@ -1,16 +1,16 @@
 #!/bin/bash
-# apps/claude/mcp.json に書いた MCP サーバー定義を、Claude Code のユーザースコープに登録する。
+# apps/claude/mcp.jsonに書いたMCPサーバー定義を、Claude Codeのユーザースコープに登録する。
 #
-# ユーザースコープの定義は ~/.claude.json に保存されるが、このファイルは dotfiles で直接は管理しない。
-# Claude Code が起動のたびに書き換える状態ファイルであり、アカウント情報や各プロジェクトの履歴も
+# ユーザースコープの定義は~/.claude.jsonに保存されるが、このファイルはdotfilesで直接は管理しない。
+# Claude Codeが起動のたびに書き換える状態ファイルであり、アカウント情報や各プロジェクトの履歴も
 # 含まれているため、シンボリックリンクにすると差分が絶えず生じる。
-# そこで定義だけを mcp.json に置き、`claude mcp add-json` で ~/.claude.json に反映する。
+# そこで定義だけをmcp.jsonに置き、`claude mcp add-json`で~/.claude.jsonに反映する。
 #
 # 実行するたびに同名のサーバーを削除してから登録し直すので、何度実行しても結果は同じになる。
 #
-# Slack の MCP (mcp.slack.com) はここでは登録できない。動的クライアント登録に対応しておらず、
-# Claude Code 単体では OAuth のクライアント ID を取得できないためである。
-# Slack は claude.ai 側で登録済みのコネクタを使う。
+# SlackのMCP (mcp.slack.com) はここでは登録できない。動的クライアント登録に対応しておらず、
+# Claude Code単体ではOAuthのクライアントIDを取得できないためである。
+# Slackはclaude.ai側で登録済みのコネクタを使う。
 
 set -eu
 
