@@ -16,15 +16,6 @@ MCP_FILE="$DOT_DIRECTORY/apps/claude/mcp.json"
 GREEN='\033[0;32m'
 NC='\033[0m'
 
-if ! command -v claude >/dev/null; then
-  echo "claude コマンドが見つかりません。先に Claude Code をインストールしてください。" >&2
-  exit 1
-fi
-if ! command -v jq >/dev/null; then
-  echo "jq が見つかりません。make brew を先に実行してください。" >&2
-  exit 1
-fi
-
 printf "Registering user-scope MCP servers from %s...\n" "$MCP_FILE"
 
 for name in $(jq -r '.mcpServers | keys[]' "$MCP_FILE"); do
