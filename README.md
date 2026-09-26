@@ -24,14 +24,14 @@ cd dotfiles
 ## 使い方
 
 ```bash
-# 一括セットアップ: brew + シンボリンク + VSCode + MCP
+# 一括セットアップ: brew + シンボリンク + VSCode + Claude Code
 make install
 
 # 個別実行
 make brew      # Homebrew パッケージのインストール
 make link      # シンボリンクの作成
 make vscode    # VSCode の設定・拡張機能セットアップ
-make mcp       # Claude Code のユーザースコープ MCP サーバー登録
+make claude    # Claude Code のセットアップ (MCP サーバー登録)
 ```
 
 ## ディレクトリ構成
@@ -50,6 +50,6 @@ dotfiles/
 │   ├── packages.sh       # Homebrew パッケージ
 │   ├── symlink.sh        # シンボリンク作成
 │   ├── vscode.sh         # VSCode セットアップ
-│   └── mcp.sh            # Claude Code MCP サーバー登録
+│   └── claude.sh         # Claude Code セットアップ (MCP サーバー登録)
 └── .github/workflows/    # CI
 ```

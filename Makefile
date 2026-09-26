@@ -1,8 +1,8 @@
-.PHONY: install brew link vscode mcp all
+.PHONY: install brew link vscode claude all
 
 all: install
 
-install: brew link vscode mcp
+install: brew link vscode claude
 
 brew:
 	@bash scripts/packages.sh
@@ -13,5 +13,5 @@ link:
 vscode:
 	@bash scripts/vscode.sh
 
-mcp:
-	@bash scripts/mcp.sh
+claude:
+	@bash scripts/claude.sh
